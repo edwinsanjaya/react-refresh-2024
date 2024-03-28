@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Blibli,com",
+    "startDate": "Jan 2021",
+    "endDate": "June 2021",
+    "description": "Established in 2010, Blibli.com, a Djarum Group venture, is Indonesia's leading omnichannel e-commerce platform, seamlessly integrating lifestyle and commerce for its users.",
+    "roles": [
+      {
+        "roleName": "Senior Product Lead",
+        "roleDescription": "Led the seller platform's strategic roadmao, enchancing seller experiences, retention and growth.",
+        "keyAchievement": [
+          "Reduces seller registration drop-off by 43%",
+          "Increase mobile-web compatibility from 56.5% to 75%",
+          "Executed pivotal projects including seller fraud management, homepage revamp, promotions and seller learning center"
+        ]
+      },
+      {
+        "roles": [
+          {
+            "roleName": "Software Engineer in Test",
+            "roleDescription": "Led the seller platform's strategic roadmao, enchancing seller experiences, retention and growth.",
+            "keyAchievement": [
+              "Reduces seller registration drop-off by 43%",
+              "Increase mobile-web compatibility from 56.5% to 75%",
+              "Executed pivotal projects including seller fraud management, homepage revamp, promotions and seller learning center"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

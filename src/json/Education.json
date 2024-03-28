@@ -1,0 +1,33 @@
+[
+  {
+    "universityName": "National Tsing Hua University (NTHU)",
+    "startYear" : 2022,
+    "endYear" : 2024,
+    "location": "Hsinchu, Taiwan",
+    "degree": "Master of Science in Information Systems and Applications",
+    "gpa": "4.28/4.30",
+    "worldRank": 233,
+    "countryRank": 4,
+    "keyAchievements": [
+      "Member of Intelligent Data Engineering and Application Lab",
+      "Teaching Assistant for Data Structure course, managing 200+ students",
+      "Thesis: Integrating Utility Concept in Grid Based Index for Storage Assignment",
+      "Advisor: Professor Yi-Shin Chen"
+    ]
+  },
+  {
+    "universityName": "Bandung Institute of Technology (ITB)",
+    "startYear" : 2022,
+    "endYear" : 2024,
+    "location": "Bandung, Indonesia",
+    "degree": "Bachelor of Science in Electrical Engineering",
+    "gpa": "3.65/4.00",
+    "worldRank": 281,
+    "countryRank": 3,
+    "keyAchievements": [
+      "Teaching Assistant in 4 courses: Electronics II, Signal Systems and Controls, Problem Solving with C Laboratory, Digital System Laboratory",
+      "Teaching Assistant for Data Structure course, managing 200+ students",
+      "Undergraduate Thesis: Human Machine Interface in e-Shrimp as Smart Control System for Whiteleg Shrimp Pond"
+    ]
+  }
+]

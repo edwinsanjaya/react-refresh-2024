@@ -1,0 +1,52 @@
+.navbar-container {
+  position: fixed;
+}
+
+.content-container {
+
+  max-width: 1400px;
+  margin-top: calc(56px + 40px); // 56px for bootstrap header height
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: calc(100% - 56px);
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow-y: auto; //enable scrolling
+
+  // max-width: 1400px;
+  // margin-top: calc(56px + 40px); // 56px for bootstrap header height
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 100%;
+  // // height: calc(100% - 56px);
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // height: 80vh;
+  // overflow-y: auto; //enable scrolling
+}
+
+.app-container {
+  height: 100%;
+}
+
+/*scroll-bar*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0099dd;
+}
