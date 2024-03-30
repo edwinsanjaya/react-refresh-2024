@@ -15,27 +15,27 @@
 /* Styles required only for the example above */
 
 .overview-container {
-  height: 100%;
-}
-
-.scrollspy-example {
-  // margin-top: 1px;
-  height: calc(100vh - 1px - 96px) !important;
+  // margin-top: calc(56px + 40px); // 56px for bootstrap header height
   position: relative;
   overflow: auto;
-  padding-right: 20px;
+  height: 100%;
+  height: calc(100vh - 1px - 96px) !important;
 }
 
 $breakpoint-md: 768px;
 @media (max-width: $breakpoint-md) {
-  .scrollspy-example {
-    // margin-top: 1px;
+  .overview-container {
+    margin-top: calc(96px + 90px); // 56px for bootstrap header height
     height: calc(100vh - 1px - 96px - 142px) !important;
     position: relative;
     overflow: auto;
   }
 }
 
-
-
-// test
+.navigation-sidebar .fixed-navigation {
+  position: fixed;
+  top: 96px; // Adjust this based on your header's height
+  width: 25%; // Assuming the sidebar takes up 25% of the viewport width, adjust as needed
+  height: calc(100vh - 96px); // Full height minus header
+  overflow-y: auto; // Allows scrolling within the navigation if needed
+}

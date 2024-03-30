@@ -1,9 +1,14 @@
+.navbar-container {
+  position: fixed; // This makes the navbar stay in the same place
+  top: 96px; // Adjust this value to align with the top of the viewport or below any fixed header you have
+  left: 0; // Aligns the navbar to the left side of the viewport
+  height: calc(100vh - 96px); // Adjust height to take full vertical space minus any top margin
+  overflow-y: auto; // Allows the navbar itself to be scrollable if the content overflows vertically
+  z-index: 10000;
+}
+
 .content-container {
-  max-width: 1400px;
-  margin-top: calc(56px + 40px); // 56px for bootstrap header height
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-top: 96px;
 }
 
 /*scroll-bar*/

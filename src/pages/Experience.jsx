@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Container } from 'reactstrap';
 
 class Experience extends Component {
   render() {
     return (
-      <div>
+      <Container>
         This is experience page
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at fringilla nulla. Morbi cursus, magna nec volutpat molestie, erat justo ultrices ante, et finibus elit ex sed neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eget nunc nec purus posuere elementum vitae eu velit. Integer pretium rutrum ex scelerisque porttitor. In eu urna id mauris commodo tristique ultricies ac orci. Sed condimentum massa ut dolor tincidunt, in suscipit dui suscipit. Suspendisse potenti. Etiam euismod rhoncus ipsum a mattis. Praesent ac mauris odio. Morbi et arcu eu justo lacinia blandit et ut ante. Fusce commodo ipsum sed enim lobortis, quis hendrerit tellus dictum. Donec congue leo lacus, sed fermentum diam aliquet ac.
@@ -35,7 +36,7 @@ class Experience extends Component {
         Curabitur molestie felis et ligula mattis, nec auctor elit tincidunt. Sed rutrum, orci ac varius efficitur, magna turpis bibendum risus, a mattis justo metus nec sem. Nullam pulvinar, tortor at accumsan vestibulum, sapien metus malesuada metus, sit amet consectetur dui magna nec augue. Sed a sem convallis, pretium risus et, cursus sapien. Donec egestas felis id erat blandit rutrum. Etiam id neque magna. Nullam tincidunt vulputate sagittis. Quisque tincidunt eros ut sagittis commodo. Donec congue justo vitae auctor rutrum. Donec maximus mauris ac lectus vestibulum, placerat tempus dolor iaculis. Proin pretium accumsan velit sed facilisis. Integer aliquam ultrices porta. Vivamus accumsan sapien vitae velit convallis aliquet. Etiam auctor ipsum tortor, at rhoncus felis elementum ac. Donec nec tincidunt eros.
 
         Curabitur in purus at justo ornare aliquet ut et justo. Praesent id consequat metus. Ut elit ligula, placerat vel ante a, sodales vulputate ipsum. Aenean quis nisl non nisi rutrum faucibus. Integer in tristique sapien, sed commodo ligula. Nam a metus purus. Maecenas luctus justo id dolor fermentum blandit. Quisque a elit tellus. Etiam iaculis quam enim, vel eleifend urna placerat quis. Maecenas ac mi nisi. Etiam metus leo, dictum id turpis consequat, ullamcorper scelerisque massa.
-      </div>
+      </Container>
     );
   }
 }

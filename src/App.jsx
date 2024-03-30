@@ -8,7 +8,8 @@ import './App.scss'
 
 const App = () => {
   return (
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="app-container">
         <div className="navbar-container">
           <NavBar />
         </div>
@@ -18,7 +19,8 @@ const App = () => {
             <Route exact path="/experience" element={<Experience />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </div>
+    </BrowserRouter>
   )
 }
 

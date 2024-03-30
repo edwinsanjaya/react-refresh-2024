@@ -26,165 +26,56 @@ class Overview extends Component {
     this.section3Title = "Skills"
   }
 
+  componentDidMount() {
+    if (this.containerRef.current) {
+      this.containerRef.current.addEventListener('scroll', this.handleScroll);
+    }
+  }
+
+  handleScroll = () => {
+    console.log('Scrolling...');
+  }
+
+  componentWillUnmount() {
+    if (this.containerRef.current) {
+      this.containerRef.current.removeEventListener('scroll', this.handleScroll);
+    }
+  }
+
   render() {
     return (
-      <MDBContainer className='overview-container'>
-        <MDBRow>
-          <MDBCol md='3'>
-            <MDBScrollspy container={this.containerRef}>
-              <MDBScrollspyLink targetRef={this.section1}>{this.section1Title}</MDBScrollspyLink>
-              <MDBScrollspyLink targetRef={this.section2}>{this.section2Title}</MDBScrollspyLink>
-              <MDBScrollspyLink targetRef={this.section3}>{this.section3Title}</MDBScrollspyLink>
-              {/* <MDBScrollspyLink subsections={this.subsections} targetRef={this.section3}>
-                Section 3
-              </MDBScrollspyLink>
-              <MDBScrollspySubList className='ps-3'>
-                <MDBScrollspyLink targetRef={this.sectionA}>Subsection A</MDBScrollspyLink>
-                <MDBScrollspyLink targetRef={this.sectionB}>Subsection B</MDBScrollspyLink>
-              </MDBScrollspySubList>
-              <MDBScrollspyLink targetRef={this.section4}>Section 4</MDBScrollspyLink> */}
-            </MDBScrollspy>
-          </MDBCol>
-          <MDBCol md='9'>
-            <div id='element' ref={this.containerRef} className='scrollspy-example'>
-              <section ref={this.section1} id='section-1'>
-                <h3>{this.section1Title}</h3>
-                <p>
-                <LoremIpsum p={8} />
-                </p>
-              </section>
-              <section ref={this.section2} id='section-2'>
-                <h3>{this.section2Title}</h3>
-                <LoremIpsum p={6} />
-              </section>
-              <section ref={this.section3} id='section-3'>
-                <h3>{this.section3Title}</h3>
-                <LoremIpsum p={8} />
-              </section>
-
-
-              {/* <section ref={this.section3} id='section-3'>
-                <h3>Section 3</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
-                <section ref={this.sectionA} id='subsection-a'>
-                  <h3>Subsection A</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                    maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                    quaerat accusamus numquam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                    maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                    quaerat accusamus numquam.
-                  </p>
+      <div ref={this.containerRef} className='overview-container'>
+        <MDBContainer >
+          <MDBRow>
+            <MDBCol md='3' className='navigation-sidebar'>
+              <div className="fixed-navigation">
+                <MDBScrollspy container={this.containerRef}>
+                  <MDBScrollspyLink targetRef={this.section1}>{this.section1Title}</MDBScrollspyLink>
+                  <MDBScrollspyLink targetRef={this.section2}>{this.section2Title}</MDBScrollspyLink>
+                  <MDBScrollspyLink targetRef={this.section3}>{this.section3Title}</MDBScrollspyLink>
+                </MDBScrollspy>
+              </div>
+            </MDBCol>
+            <MDBCol md='9'>
+              <div id='element' className='scrollspy-example'>
+                <section ref={this.section1} id='section-1'>
+                  <h3>{this.section1Title}</h3>
+                  <LoremIpsum p={8} />
                 </section>
-                <section ref={this.sectionB} id='subsection-b'>
-                  <h3>Subsection B</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                    maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                    quaerat accusamus numquam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                    maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                    quaerat accusamus numquam.
-                  </p>
+                <section ref={this.section2} id='section-2'>
+                  <h3>{this.section2Title}</h3>
+                  <LoremIpsum p={6} />
                 </section>
-              </section>
-              <section ref={this.section4} id='section-4'>
-                <h3>Section 4</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
-              </section> */}
-            </div>
-          </MDBCol>
+                <section ref={this.section3} id='section-3'>
+                  <h3>{this.section3Title}</h3>
+                  <LoremIpsum p={8} />
+                </section>
+              </div>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </div>
 
-
-        </MDBRow>
-      </MDBContainer>
-
-
-
-      // <div>
-      //   <Container>
-      //     <Row>
-      //       <Col xs="12" md="3" className="nav-overview">
-      //         <div className='nav-overview'>
-      //           <Row>
-      //             <Col xs="3" md="12">
-      //               <a onClick={(e) => onPress(e)} href='#section-about'>
-      //                 <div data-to-scrollspy-id="section-about" >
-      //                   About Me
-      //                 </div>
-      //               </a>
-      //             </Col>
-      //             <Col xs="3" md="12">
-      //               <a onClick={(e) => onPress(e)} href="#target-2">
-      //                 <div data-to-scrollspy-id="target-2">
-      //                   Target 2
-      //                 </div>
-      //               </a>
-      //             </Col>
-      //             <Col xs="3" md="12">
-      //               <a onClick={(e) => onPress(e)} href="#target-3">
-      //                 <div data-to-scrollspy-id="target-3">
-      //                   Target 3
-      //                 </div>
-      //               </a>
-      //             </Col>
-      //             {/* <Col xs="3" md="12" data-to-scrollspy-id="target-3">Target 3</Col> */}
-      //           </Row>
-      //         </div>
-      //       </Col>
-
-
-      //       <Col xs="12" md="9" className="content-overview">
-      //         <ScrollSpy 
-      //         scrollThrottle={50} 
-      //         onUpdateCallback={(id) => console.log(id)}
-      //         useBoxMethod={false}>
-      //           <div id="section-about" className="section">
-      //             <div>About Me</div>
-      //             <div>
-      //               <About />
-      //             </div>
-      //           </div>
-      //           <div id="target-2" className="section">
-      //             <div>Target 2</div>
-      //             <div>
-      //               <LoremIpsum p={12} />
-      //             </div>
-      //           </div>
-      //           <div id="target-3" className="section">
-      //             <div>Target 3</div>
-      //             <div>
-      //               <LoremIpsum p={12} />
-      //             </div>
-      //           </div>
-      //         </ScrollSpy>
-      //       </Col>
-      //     </Row>
-      //   </Container>
-      // </div>
     );
   }
 }

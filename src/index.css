@@ -5,3 +5,9 @@
 html body{
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+body{
+  width:100%;
+  height:auto;
+  background-color:transparent;  
+}
