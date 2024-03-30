@@ -23,13 +23,12 @@ function NavBar(args) {
 
   return (
     <div>
-      
-        {/* reactstrap add expand='md' to make it responsive*/}
-        <Navbar {...args} expand='md' fixed="top" color="light" position="sticky">
-        <div className="navbar-parent-container">
+      {/* reactstrap add expand='md' to make it responsive*/}
+      <Navbar {...args} expand='md' fixed="top" color="light" position="sticky" container>
+        {/* <div className="navbar-parent-container"> */}
           <NavbarBrand href="/">Edwin Sanjaya</NavbarBrand>
           <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
+          <Collapse isOpen={isOpen} navbar className='navbar-collapse'>
             <Nav className="ms-auto" navbar>
               <NavItem>
                 <NavLink tag={Link} to="/">Overview</NavLink>
@@ -55,10 +54,9 @@ function NavBar(args) {
               </UncontrolledDropdown>
             </Nav>
           </Collapse>
-           </div>
-        </Navbar>
-      </div>
-   
+        {/* </div> */}
+      </Navbar>
+    </div>
   );
 }
 

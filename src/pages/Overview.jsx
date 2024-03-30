@@ -20,53 +20,50 @@ class Overview extends Component {
     this.sectionB = React.createRef();
     this.containerRef = React.createRef();
     this.subsections = [this.sectionA, this.sectionB]
+
+    this.section1Title = "About Me";
+    this.section2Title = "Resume"
+    this.section3Title = "Skills"
   }
 
   render() {
     return (
       <MDBContainer className='overview-container'>
         <MDBRow>
-          <MDBCol md='4'>
+          <MDBCol md='3'>
             <MDBScrollspy container={this.containerRef}>
-              <MDBScrollspyLink targetRef={this.section1}>Section 1</MDBScrollspyLink>
-              <MDBScrollspyLink targetRef={this.section2}>Section 2</MDBScrollspyLink>
-              <MDBScrollspyLink subsections={this.subsections} targetRef={this.section3}>
+              <MDBScrollspyLink targetRef={this.section1}>{this.section1Title}</MDBScrollspyLink>
+              <MDBScrollspyLink targetRef={this.section2}>{this.section2Title}</MDBScrollspyLink>
+              <MDBScrollspyLink targetRef={this.section3}>{this.section3Title}</MDBScrollspyLink>
+              {/* <MDBScrollspyLink subsections={this.subsections} targetRef={this.section3}>
                 Section 3
               </MDBScrollspyLink>
               <MDBScrollspySubList className='ps-3'>
                 <MDBScrollspyLink targetRef={this.sectionA}>Subsection A</MDBScrollspyLink>
                 <MDBScrollspyLink targetRef={this.sectionB}>Subsection B</MDBScrollspyLink>
               </MDBScrollspySubList>
-              <MDBScrollspyLink targetRef={this.section4}>Section 4</MDBScrollspyLink>
+              <MDBScrollspyLink targetRef={this.section4}>Section 4</MDBScrollspyLink> */}
             </MDBScrollspy>
           </MDBCol>
-          <MDBCol md='8'>
+          <MDBCol md='9'>
             <div id='element' ref={this.containerRef} className='scrollspy-example'>
               <section ref={this.section1} id='section-1'>
-                <h3>Section 1</h3>
+                <h3>{this.section1Title}</h3>
                 <p>
-                <LoremIpsum p={12} />
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
+                <LoremIpsum p={8} />
                 </p>
               </section>
               <section ref={this.section2} id='section-2'>
-                <h3>Section 2</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
-                  maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
-                  quaerat accusamus numquam.
-                </p>
+                <h3>{this.section2Title}</h3>
+                <LoremIpsum p={6} />
               </section>
               <section ref={this.section3} id='section-3'>
+                <h3>{this.section3Title}</h3>
+                <LoremIpsum p={8} />
+              </section>
+
+
+              {/* <section ref={this.section3} id='section-3'>
                 <h3>Section 3</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
@@ -117,7 +114,7 @@ class Overview extends Component {
                   maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis
                   quaerat accusamus numquam.
                 </p>
-              </section>
+              </section> */}
             </div>
           </MDBCol>
 
