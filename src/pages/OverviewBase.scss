@@ -1,0 +1,39 @@
+.active-scroll-spy {
+  background-color: yellowgreen;
+  border-radius: 15px;
+}
+
+.nav-overview {
+  position: fixed;
+  top: 96px;
+}
+
+.section {
+  scroll-margin-top: 96px;
+}
+
+/* Styles required only for the example above */
+
+.overview-container {
+  height: 100%;
+}
+
+.scrollspy-example {
+  height: calc(100vh - 1px - 96px) !important;
+  position: relative;
+  overflow: auto;
+}
+
+$breakpoint-md: 768px;
+@media (max-width: $breakpoint-md) {
+  .scrollspy-example {
+    // margin-top: 1px;
+    height: calc(100vh - 1px - 96px - 142px) !important;
+    position: relative;
+    overflow: auto;
+  }
+}
+
+
+
+// test

@@ -25,7 +25,7 @@ function NavBar(args) {
     <div>
       
         {/* reactstrap add expand='md' to make it responsive*/}
-        <Navbar {...args} expand='md' fixed="top">
+        <Navbar {...args} expand='md' fixed="top" color="light" position="sticky">
         <div className="navbar-parent-container">
           <NavbarBrand href="/">Edwin Sanjaya</NavbarBrand>
           <NavbarToggler onClick={toggle} />
@@ -54,7 +54,6 @@ function NavBar(args) {
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-            {/* <NavbarText>Simple Text</NavbarText> */}
           </Collapse>
            </div>
         </Navbar>

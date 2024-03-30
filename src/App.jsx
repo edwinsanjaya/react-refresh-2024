@@ -8,21 +8,17 @@ import './App.scss'
 
 const App = () => {
   return (
-    <div>
-      <div className='app-container'>
-        <BrowserRouter>
-          <div className="navbar-container">
-            <NavBar />
-          </div>
-          <div className='content-container'>
-            <Routes>
-              <Route exact path="/" element={<Overview />} />
-              <Route exact path="/experience" element={<Experience />} />
-            </Routes>
-          </div>
-        </BrowserRouter>
-      </div>
-    </div>
+      <BrowserRouter>
+        <div className="navbar-container">
+          <NavBar />
+        </div>
+        <div className='content-container'>
+          <Routes>
+            <Route exact path="/" element={<Overview />} />
+            <Route exact path="/experience" element={<Experience />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
   )
 }
 
