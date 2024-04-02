@@ -32,10 +32,16 @@ $breakpoint-md: 768px;
   }
 }
 
+@media (min-width: $breakpoint-md) {
+  .spynav-link{
+    font-size: 18px !important;
+    padding: 5px 10px !important;
+  }
+}
+
 .navigation-sidebar .fixed-navigation {
   position: fixed;
   top: 96px; // Adjust this based on your header's height
-  width: 25%; // Assuming the sidebar takes up 25% of the viewport width, adjust as needed
   height: calc(100vh - 96px); // Full height minus header
   overflow-y: auto; // Allows scrolling within the navigation if needed
 }

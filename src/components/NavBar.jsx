@@ -34,7 +34,10 @@ function NavBar(args) {
                 <NavLink tag={Link} to="/">Overview</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/experience">Experience</NavLink>
+                <NavLink tag={Link} to="/gaming-journey">Gaming Journey</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink tag={Link} to="/about-website">About Website</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">

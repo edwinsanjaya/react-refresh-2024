@@ -1,0 +1,51 @@
+.title1 {
+  font-size: 20px;
+}
+
+.location {
+  font-size: 16px;
+}
+
+.list-item {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.timeline {
+  position: relative;
+  padding-left: 0px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+  width: 4px;
+  background-color: #e9ecef;
+}
+
+.timeline-point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #98d1fa;
+  border-radius: 50%;
+  // left: 5px; /* Half of parent padding-left - half of .timeline-point width */
+  // transform: translateX(-50%); /* Centers the dot on the line */
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.title1 {
+  color: #3b71ca;
+  font-size: 22px;
+}
+
+.title2 {
+  font-size: 20px;
+}

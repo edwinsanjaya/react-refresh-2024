@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap'
 import ScrollSpy from 'react-ui-scrollspy';
 import './Overview.scss'
 import About from '../components/About';
+import Resume from '../components/Resume';
 import { MDBCol, MDBContainer, MDBRow, MDBScrollspy, MDBScrollspyLink, MDBScrollspySubList } from 'mdb-react-ui-kit';
 
 
@@ -47,25 +48,27 @@ class Overview extends Component {
       <div ref={this.containerRef} className='overview-container'>
         <MDBContainer >
           <MDBRow>
-            <MDBCol md='3' className='navigation-sidebar'>
+            <MDBCol md='2' className='navigation-sidebar'>
               <div className="fixed-navigation">
                 <MDBScrollspy container={this.containerRef}>
-                  <MDBScrollspyLink targetRef={this.section1}>{this.section1Title}</MDBScrollspyLink>
-                  <MDBScrollspyLink targetRef={this.section2}>{this.section2Title}</MDBScrollspyLink>
-                  <MDBScrollspyLink targetRef={this.section3}>{this.section3Title}</MDBScrollspyLink>
+                  <MDBScrollspyLink targetRef={this.section1} className='spynav-link'>{this.section1Title}</MDBScrollspyLink>
+                  <MDBScrollspyLink targetRef={this.section2} className='spynav-link'>{this.section2Title}</MDBScrollspyLink>
+                  <MDBScrollspyLink targetRef={this.section3} className='spynav-link'>{this.section3Title}</MDBScrollspyLink>
                 </MDBScrollspy>
               </div>
             </MDBCol>
-            <MDBCol md='9'>
+            <MDBCol md='10'>
               <div id='element' className='scrollspy-example'>
                 <section ref={this.section1} id='section-1'>
                   <h3>{this.section1Title}</h3>
-                  <LoremIpsum p={8} />
+                  <About />
                 </section>
+                <hr class="hr" />
                 <section ref={this.section2} id='section-2'>
                   <h3>{this.section2Title}</h3>
-                  <LoremIpsum p={6} />
+                  <Resume />
                 </section>
+                <hr class="hr" />
                 <section ref={this.section3} id='section-3'>
                   <h3>{this.section3Title}</h3>
                   <LoremIpsum p={8} />
