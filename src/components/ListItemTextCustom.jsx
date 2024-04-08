@@ -4,7 +4,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 
 const myStyle = {
-  fontFamily: '"Source Sans 3", sans-serif',
+  // fontFamily: '"Source Sans 3", sans-serif',
+  fontFamily: '"Jost", sans-serif',
   fontOpticalSizing: 'auto',
   fontWeight: 500,
   fontStyle: 'normal'

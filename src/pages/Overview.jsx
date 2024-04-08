@@ -5,7 +5,9 @@ import ScrollSpy from 'react-ui-scrollspy';
 import './Overview.scss'
 import About from '../components/About';
 import Resume from '../components/Resume';
+import SkillSummary from '../components/SkillSummary';
 import { MDBCol, MDBContainer, MDBRow, MDBScrollspy, MDBScrollspyLink, MDBScrollspySubList } from 'mdb-react-ui-kit';
+
 
 
 class Overview extends Component {
@@ -71,6 +73,7 @@ class Overview extends Component {
                 <hr class="hr" />
                 <section ref={this.section3} id='section-3'>
                   <h3>{this.section3Title}</h3>
+                  <SkillSummary/>
                   <LoremIpsum p={8} />
                 </section>
               </div>

@@ -56,8 +56,8 @@ class GamingJourney extends Component {
       {
         id: 5,
         name: "Tom Clancy's The Division 2",
-        playtime: "65 hours",
-        mainDetail: "Level 40/40, SHD Level: 7",
+        playtime: "70 hours",
+        mainDetail: "Level 40/40, SHD Level: 30",
       },
     ];
 

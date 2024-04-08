@@ -1,0 +1,24 @@
+.mdb-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px !important;
+}
+.mdb-col {
+  display: flex;
+  flex-direction: column;
+}
+.mdb-card {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.mdb-card-title{
+  display: flex;
+  align-items: center;
+  color: #3b71ca !important;
+}
+
+.skill-list{
+  color: #555;
+  font-weight: 450;
+}
