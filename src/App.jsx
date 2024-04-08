@@ -7,6 +7,7 @@ import GamingJourney from './pages/GamingJourney'
 import AboutWebsite from './pages/AboutWebsite'
 import Overview from './pages/Overview'
 import './App.scss'
+import WithFooterLayout from './WithFooterLayout'
 
 const App = () => {
   return (
@@ -18,8 +19,8 @@ const App = () => {
         <div className='content-container'>
           <Routes>
             <Route exact path="/" element={<Overview />} />
-            <Route exact path="/gaming-journey" element={<GamingJourney />} />
-            <Route exact path="/about-website" element={<AboutWebsite />} />
+            <Route exact path="/gaming-journey" element={<WithFooterLayout><GamingJourney/></WithFooterLayout>} />
+            <Route exact path="/about-website" element={<WithFooterLayout><AboutWebsite/></WithFooterLayout>} />
           </Routes>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Container } from 'reactstrap';
 import { MDBTable, MDBTableHead } from 'mdb-react-ui-kit';
 import GamingJourneyRow from '../components/GamingJourneyRow';
 import './GamingJourney.scss'
+import Footer from '../components/Footer';
 
 class GamingJourney extends Component {
 
@@ -357,7 +358,7 @@ class GamingJourney extends Component {
             ))}
           </MDBTableHead>
         </MDBTable>
-
+        
       </Container>
     );
   }

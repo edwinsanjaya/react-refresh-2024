@@ -15,7 +15,7 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 import butterflyBg from '../assets/img/butterfly.webp'
 import profilePicture from '../assets/img/profile.jpg'
-import { MDBRipple } from 'mdb-react-ui-kit';
+import { MDBRipple, MDBBadge } from 'mdb-react-ui-kit';
 
 const aboutBullets = [
   {
@@ -72,6 +72,13 @@ class About extends Component {
               <Col xs="12" md="9" className='about-detail-container'>
                 {/* <Row className='about-detail-name'>{aboutData.name}</Row> */}
                 <Row className='about-detail-name'>{aboutData.name}</Row>
+                <Row className='about-detail-badge'>
+                  <div>
+                    <MDBBadge pill className='badge-title'>Data Analyst</MDBBadge>
+                    <MDBBadge pill className='badge-title'>Product Manager</MDBBadge>
+                    <MDBBadge pill className='badge-title'>Software Engineer</MDBBadge>
+                  </div>
+                </Row>
                 <Row className='about-detail-description'>{aboutData.content}</Row>
               </Col>
             </Row>

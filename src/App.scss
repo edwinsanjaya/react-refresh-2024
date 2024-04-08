@@ -4,6 +4,7 @@
   left: 0; // Aligns the navbar to the left side of the viewport
   height: calc(100vh - 96px); // Adjust height to take full vertical space minus any top margin
   overflow-y: auto; // Allows the navbar itself to be scrollable if the content overflows vertically
+  -webkit-overflow-scrolling: touch;
   z-index: 10000;
 }
 

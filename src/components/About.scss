@@ -6,14 +6,29 @@
 }
 
 .profile-picture {
+  
+}
 
+$breakpoint-md: 768px;
+@media (max-width: $breakpoint-md) {
+  .profile-container {
+    max-width: 250px !important;
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+  }
 }
 
 .about-detail-name {
-  padding: 30px 20px 10px 20px;
+  padding: 30px 20px 5px 20px;
   font-size: 24px;
 }
 
 .about-detail-description {
   padding: 0px 20px 10px 20px;
+}
+
+.badge-title {
+  font-weight: 450 !important;
+  font-size: 15px !important;
+  margin: 0 5px 10px 5px !important;
 }

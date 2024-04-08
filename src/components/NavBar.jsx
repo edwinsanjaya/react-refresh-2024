@@ -39,7 +39,7 @@ function NavBar(args) {
               <NavItem>
                 <NavLink tag={Link} to="/about-website">About Website</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
                   GitHub
                 </NavLink>
@@ -54,7 +54,7 @@ function NavBar(args) {
                   <DropdownItem divider />
                   <DropdownItem>Reset</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
             </Nav>
           </Collapse>
         {/* </div> */}

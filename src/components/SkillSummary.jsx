@@ -16,7 +16,6 @@ import ListItem from '@mui/material/ListItem';
 import { lightBlue } from '@mui/material/colors';
 import ChevronRight from '@mui/icons-material/ChevronRight';
 
-
 class SkillSummary extends Component {
 
   constructor(props) {
@@ -100,20 +99,20 @@ class SkillSummary extends Component {
       <MDBRow className='mdb-row'>
         {
           this.skills.map((skill, index) => (
-            <MDBCol sm='6' className='mdb-col'>
+            <MDBCol sm='6' className='mdb-col' key={index}>
               <MDBCard className='mdb-card'>
                 <MDBCardBody className='mdb-card-body'>
-                  <MDBCardTitle key={index} className='mdb-card-title'>
+                  <MDBCardTitle className='mdb-card-title'>
                     <ChevronRight sx={{ color: lightBlue[200] }} />
                     {skill.groupName}
                   </MDBCardTitle>
-                  <MDBCardText>
+                  <div className="p-1">
                     <ul>
                       {skill.skillList.map((skillItem, skillIndex) => (
                         <li key={skillIndex} className='skill-list'>{skillItem}</li>
                       ))}
                     </ul>
-                  </MDBCardText>
+                  </div>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>

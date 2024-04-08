@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'reactstrap'
+import './AboutWebsite.scss'
 
 class AboutWebsite extends Component {
   render() {
     return (
-      <Container>
+      <Container className='about-website-container'>
         This website were powered by:
         <ul>
           <li>Vite + React.js</li>
