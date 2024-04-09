@@ -9,8 +9,8 @@
   }
 }
 
-$breakpoint-md: 767.5px;
-@media (max-width: $breakpoint-md) {
+$breakpoint-lg: calc(992px - 1px);
+@media (max-width: $breakpoint-lg) {
   .badge-container {
     padding: 0 0 7px 0 !important;
 

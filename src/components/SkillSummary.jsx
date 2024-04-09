@@ -44,7 +44,6 @@ class SkillSummary extends Component {
           "User Interface Design (Figma)",
           "Stakeholder Management",
           "Collaboration Tools (JIRA, Confluence, Zeplin",
-          "Association Rule Mining (Apriori, FP-Growth)",
         ]
       },
       {

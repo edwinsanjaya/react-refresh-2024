@@ -53,7 +53,7 @@ class Overview extends Component {
       <div ref={this.containerRef} className='overview-container'>
         <MDBContainer >
           <MDBRow>
-            <MDBCol md='2' className='navigation-sidebar'>
+            <MDBCol lg='2' className='navigation-sidebar'>
               <div className="fixed-navigation">
                 <MDBScrollspy container={this.containerRef}>
                   <MDBScrollspyLink targetRef={this.section1} className='spynav-link'>{this.section1Title}</MDBScrollspyLink>
@@ -63,7 +63,7 @@ class Overview extends Component {
                 </MDBScrollspy>
               </div>
             </MDBCol>
-            <MDBCol md='10'>
+            <MDBCol lg='10'>
               <div id='element' className='scrollspy-example'>
                 <section ref={this.section1} id='section-1'>
                   <h3>{this.section1Title}</h3>

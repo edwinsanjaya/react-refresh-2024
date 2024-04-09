@@ -24,7 +24,8 @@
 }
 
 $breakpoint-md: 768px;
-@media (max-width: $breakpoint-md) {
+$breakpoint-lg: 992px;
+@media (max-width: calc($breakpoint-lg - 0.5px)) {
   .overview-container {
     margin-top: calc(56px + 96px); // 56px for bootstrap header height
     height: calc(100vh  - 56px - 96px) !important;
@@ -35,6 +36,7 @@ $breakpoint-md: 768px;
 
   .fixed-navigation{
     height: 40px !important;
+    background-color: white;
   }
 
   .fixed-navigation .nav {
@@ -55,4 +57,5 @@ $breakpoint-md: 768px;
   height: calc(100vh - 96px); // Full height minus header
   overflow-y: auto; // Allows scrolling within the navigation if needed
   -webkit-overflow-scrolling: touch;
+  z-index: 1000;
 }
